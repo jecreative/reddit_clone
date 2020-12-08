@@ -6,6 +6,7 @@ import dotenv from 'dotenv'
 import cookieParser from 'cookie-parser'
 
 dotenv.config()
+const PORT = process.env.PORT
 
 import authRoutes from './routes/auth'
 
@@ -22,8 +23,8 @@ app.use(cookieParser())
 app.get('/', (_, res) => res.send('Hello World'))
 app.use('/api/auth', authRoutes)
 
-app.listen(5000, async () => {
-  console.log('Server running on http://localhost:5000')
+app.listen(PORT, async () => {
+  console.log(`Server running on http://localhost:${PORT}`)
 
   try {
     await createConnection()
