@@ -32,21 +32,21 @@ const Register = () => {
             <div className='mb-2'>
               <input
                 type='email'
-                className='w-full p-3 bg-gray-100 border border-gray-400 rounded'
+                className='w-full p-3 transition duration-200 border border-gray-300 rounded outline-none focus:bg-white hover:bg-white bg-gray-50'
                 placeholder='Email'
               />
             </div>
             <div className='mb-2'>
               <input
                 type='text'
-                className='w-full p-3 bg-gray-100 border border-gray-400 rounded'
-                placeholder='Email'
+                className='w-full p-3 transition duration-200 border border-gray-300 rounded outline-none focus:bg-white hover:bg-white bg-gray-50'
+                placeholder='Username'
               />
             </div>
             <div className='mb-2'>
               <input
                 type='password'
-                className='w-full p-3 bg-gray-100 border border-gray-400 rounded'
+                className='w-full p-3 transition duration-200 border border-gray-300 rounded outline-none focus:bg-white hover:bg-white bg-gray-50'
                 placeholder='Password'
               />
             </div>
