@@ -31,7 +31,6 @@ const Login = () => {
     <div className='flex'>
       <Head>
         <title>Login</title>
-        <link rel='icon' href='/favicon.ico' />
       </Head>
       <div
         className='h-screen bg-center bg-cover w-36'
