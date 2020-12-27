@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
   }
 
   return (
-    <nav className='fixed inset-x-0 top-0 z-10 flex items-center justify-center h-12 px-5 bg-white'>
+    <nav className='fixed inset-x-0 top-0 z-10 flex items-center justify-between h-12 px-5 bg-white lg:justify-center'>
       {/* Logo */}
       <div className='flex items-center'>
         <Link href='/'>
@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
         </span>
       </div>
       {/* Search Input */}
-      <div className='flex items-center mx-auto bg-gray-100 border rounded hover:border-blue-500 hover:bg-gray-50'>
+      <div className='items-center hidden mx-auto bg-gray-100 border rounded lg:flex hover:border-blue-500 hover:bg-gray-50'>
         <i className='pl-4 pr-3 text-gray-500 fas fa-search'></i>
         <input
           type='text'
